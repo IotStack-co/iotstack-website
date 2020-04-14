@@ -12,6 +12,15 @@
             color: darken($theme-primary, 10%);
         }
     }
+    .banner {
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url(/img/IoTStack.png) no-repeat;
+        width: 320px; /* Width of new image */
+        height: 74px; /* Height of new image */
+        padding-left: 320px; /* Equal to width of new image */
+      }
     .navbar-toggler {
         font-size: 12px;
         padding: 8px 10px;
@@ -42,6 +51,9 @@
     @media (min-width: 992px) {
         border-color: transparent;
         background-color: transparent;
+        .banner {
+            background: url(/img/IoTStack-wht.png) no-repeat;
+          }
         .navbar-brand {
             color: fade(white, 70%);
             &:hover,
@@ -72,6 +84,9 @@
                 &:hover {
                     color: $theme-primary;
                 }
+            }
+            .banner {
+                background:  url(/img/IoTStack.png) no-repeat;
             }
         }
     }

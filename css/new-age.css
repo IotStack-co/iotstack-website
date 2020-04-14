@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - New Age v5.0.7 (https://startbootstrap.com/template-overviews/new-age)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
 
@@ -79,6 +79,18 @@ section h2 {
   color: #fcbd20;
 }
 
+#mainNav .banner {
+  display: block;
+  box-sizing: border-box;
+  background: url(/img/IoTStack.png) no-repeat;
+  width: 320px;
+  /* Width of new image */
+  height: 74px;
+  /* Height of new image */
+  padding-left: 320px;
+  /* Equal to width of new image */
+}
+
 #mainNav .navbar-toggler {
   font-size: 12px;
   padding: 8px 10px;
@@ -116,6 +128,9 @@ section h2 {
     border-color: transparent;
     background-color: transparent;
   }
+  #mainNav .banner {
+    background: url(/img/IoTStack-wht.png) no-repeat;
+  }
   #mainNav .navbar-brand {
     color: fade(white, 70%);
   }
@@ -147,6 +162,9 @@ section h2 {
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
     color: #fdcc52;
+  }
+  #mainNav.navbar-shrink .banner {
+    background: url(/img/IoTStack.png) no-repeat;
   }
 }
 
