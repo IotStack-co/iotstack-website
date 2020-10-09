@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #fdcc52;
+  color: #00c80a;
   transition: all .35s;
 }
 
 a:hover, a:focus {
-  color: #fcbd20;
+  color: #009507;
 }
 
 hr {
@@ -69,14 +69,14 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #fdcc52;
+  color: #00c80a;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #fcbd20;
+  color: #009507;
 }
 
 #mainNav .banner {
@@ -105,7 +105,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #fdcc52 !important;
+  color: #00c80a !important;
   background-color: transparent;
 }
 
@@ -120,7 +120,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #fdcc52;
+  color: #00c80a;
 }
 
 @media (min-width: 992px) {
@@ -129,7 +129,7 @@ section h2 {
     background-color: transparent;
   }
   #mainNav .banner {
-    background: url(/img/IoTStack-wht.png) no-repeat;
+    background: url("/img/IoTStack-wht.png") no-repeat;
   }
   #mainNav .navbar-brand {
     color: fade(white, 70%);
@@ -153,7 +153,7 @@ section h2 {
     color: #222222;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #fdcc52;
+    color: #00c80a;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
@@ -161,7 +161,7 @@ section h2 {
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #fdcc52;
+    color: #00c80a;
   }
   #mainNav.navbar-shrink .banner {
     background: url(/img/IoTStack.png) no-repeat;
@@ -174,8 +174,8 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+  background: url("../img/bg-pattern.png"), #00b350;
+  background: url("../img/bg-pattern.png"), linear-gradient(to right top, #00b350, #6800c9);
 }
 
 header.masthead .header-content {
@@ -295,7 +295,7 @@ section.features .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
-  background: linear-gradient(to left, #7b4397, #dc2430);
+  background: linear-gradient(to right top, #00b350, #6800c9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -364,11 +364,11 @@ section.contact ul.list-social li a {
 }
 
 section.contact ul.list-social li.social-twitter a {
-  background-color: #1da1f2;
+  background-color: #93d6ff;
 }
 
 section.contact ul.list-social li.social-twitter a:hover {
-  background-color: #0d95e8;
+  background-color: #7accff;
 }
 
 section.contact ul.list-social li.social-facebook a {
@@ -413,12 +413,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #fdcc52;
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: #00c80a;
+  background: linear-gradient(#00c80a, #00af09);
 }
 
 .text-primary {
-  color: #fdcc52;
+  color: #00c80a;
 }
 
 .no-gutter > [class*='col-'] {
@@ -434,8 +434,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
-  border-color: #fdcc52;
-  background-color: #fdcc52;
+  border-color: #00c80a;
+  background-color: #00c80a;
 }
 
 .btn {
