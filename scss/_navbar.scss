@@ -5,11 +5,11 @@
     @include transition-all;
     @include heading-font;
     .navbar-brand {
-        color: $theme-primary;
+        color: $theme-link-bottom;
         @include heading-font;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: darken($theme-link-bottom, 10%);
         }
     }
     .banner {
@@ -32,7 +32,7 @@
                 font-size: 11px;
                 @include alt-font;
                 &.active {
-                    color: $theme-primary !important;
+                    color: $theme-link-top !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -43,7 +43,7 @@
             > a:focus {
                 color: $gray-darker;
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-link-top;
                 }
             }
         }
@@ -75,14 +75,14 @@
                 color: $gray-darker;
                 &:hover,
                 &:focus {
-                    color: $theme-primary;
+                    color: $theme-link-top;
                 }
             }
             .navbar-nav > li > a,
             .navbar-nav > li > a:focus {
                 color: $gray-darker;
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-link-top;
                 }
             }
             .banner {

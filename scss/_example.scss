@@ -1,0 +1,14 @@
+// Styling for the call to action section
+section.example {
+    position: relative;
+
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    color: #ffffff;
+    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left top, $theme-secondary, $theme-tertiary);
+    background: url('../img/bg-pattern.png'), linear-gradient(to right bottom, $theme-secondary, $theme-tertiary);
+
+    text-align: center;
+}

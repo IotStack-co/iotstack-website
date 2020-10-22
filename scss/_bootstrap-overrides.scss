@@ -1,12 +1,11 @@
 // Bootstrap overrides for this template
 .bg-primary {
-    background: $theme-primary;
-    background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
-    background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left top, $theme-secondary, $theme-tertiary);
+    background: url('../img/bg-pattern.png'), linear-gradient(to right bottom, $theme-secondary, $theme-tertiary);
 }
 
 .text-primary {
-    color: $theme-primary;
+    color: $theme-link-bottom;
 }
 
 .no-gutter > [class*='col-'] {
@@ -22,9 +21,10 @@
     &:focus,
     &:active,
     &.active {
-        color: white;
-        border-color: $theme-primary;
-        background-color: $theme-primary;
+        color: #000000;
+        border-color: #000000;
+        background: -webkit-linear-gradient(to left, $theme-primary, $theme-primary2);
+        background: linear-gradient(to right, $theme-primary, $theme-primary2);
     }
 }
 
