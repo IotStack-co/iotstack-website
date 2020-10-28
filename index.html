@@ -91,77 +91,96 @@
       <div class="row h-100">
         <img src="img/hintergrund_iot.png" class="figure-img" alt="">
       </div>
+      <!--===== MQTT ====-->
+      <h1>MQTT</h1>
+      <p>Mit MQTT werden die erfassten Daten zu Influx gesendet.</p>
+      <!--== Mosquitto ==-->
+      <h1>Mosquitto</h1>
+      <p>Mosquitto vereinfacht die Datenübertragung.</p>
+      <!--=== Telegraf ==-->
+      <h1>Telegraf</h1>
+      <p>Telegraf ist ein Plugin-gesteuerter Server-Agent zum Sammeln und Senden von Metriken und<br>
+        Ereignissen aus Datenbanken, Systemen und IoT-Sensoren. </p>
+      <!--==== Influx ===-->
+      <h1>Influx</h1>
+      <p>Influx bekommt alle Daten von allen Devices und schickt sie weiter zu Grafana und zur APP.</p>
+      <!--=== Grafana ===-->
+      <h1>Grafana</h1>
+      <p>In Grafana werden die Daten von Influx in einem Dashboard angezeigt.<br>
+        Das Dashboard kann man sich selbst gestalten.</p>
+      <!--===== APP =====-->
+      <h1>APP</h1>
+      <p>In der App werden die Daten wie in Grafana angezeigt und auch Daten wieder zurück gesendet.</p>
+      <!--=== Gateway ===-->
+      <h1>Gateway</h1>
+      <p>Ein Gateway ist ein Stück Netzwerk-Hardware, das in der Telekommunikation für<br>
+        Telekommunikationsnetzwerke verwendet wird und den Datenfluss<br>
+        von einem diskreten Netzwerk zu einem anderen ermöglicht.</p>
+      <!--===== SPS =====-->
+      <h1>SPS</h1>
+      <p>Es steht für Speicherprogrammierter Steuerung und sie werden zur Steuerung oder<br>
+        Regelung von Maschinen und Anlagen eingesetzt.</p>
     </div>
   </section>
 <!--=========== FEATURES ===========-->
-  <section class="features" id="features">                                      
+  <section class="features" id="features">
     <div class="container">
       <div class="section-heading text-center">
-        <h2>What options you can do whis IOTstack?</h2>
+        <h2>What options you can do whis IoTStack?</h2>
         <p class="text-muted">Here is one example what a IoTStack can be!</p>
         <hr>
       </div>
       <div class="row">
-        <div class="col-lg-4 my-auto">
-          <div class="device-container">
-            <div class="device-mockup iphone6_plus portrait black">
-              <div class="device">
-                <div class="screen">
-                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <!-- Different image for every "button"(symbol) to click on -->
-
-                   <img src="img/Kaffeemaschine.jpg" class="img-fluid" alt="">
-                  
-                 <!-- <img src="img/Grafana.png" class="img-fluid" alt="">
-                -->
-                  <img src="img/Grafana.png" class="img-fluid" alt="">
-                
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8 my-auto">
+        <script type = "text/javascript">
+          var images = new Array(
+            'img/coffeemachine.png',
+            'img/Grafana.png' ,
+            'img/hardware.png',
+            'img/code.png'
+          );
+          function switch_img(index){
+          document.getElementById("image").src = images[index];     
+          }
+        </script>
+              <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+              <!-- Different image for every "button"(symbol) to click on -->
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <button class="btn"><i class="fas fa-coffee"></i></button>
-                  <h3>Coffeemachine</h3>
-                  <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+            <img src="img/coffeemachine.png" id="image" class="img-fluid" height="auto" width="auto"  alt="" />
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <button class="btn"><i class="fas fa-coffee" onclick="switch_img(0);"></i></button>
+                    <h3>Coffeemachine</h3>
+                    <p class="text-muted">Our example of an IoTStack as a coffeemachine.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <button class="btn"><i class="icon-graph"></i></button>
-                  <h3>Grafana</h3>
-                  <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <div>
-                    <button class="btn"><i class="fa fa-microchip"></i></button>
-                    <h3>Hardware</h3>
-                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <button class="btn"><i class="icon-graph" onclick="switch_img(1);"></i></button>
+                    <h3>Grafana</h3>
+                    <p class="text-muted">The dashboard for the project.</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <button class="btn"><i class="icon-layers"></i></button>
-                  <h3>Software</h3>
-                  <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <div>
+                      <button class="btn"><i class="fa fa-microchip" onclick="switch_img(2);"></i></button>
+                      <h3>Hardware</h3>
+                      <p class="text-muted">You needn't much for a IoTStack.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <button class="btn"><i class="icon-layers" onclick="switch_img(3);"></i></button>
+                    <h3>Software</h3>
+                    <p class="text-muted">Some code example of the project.</p>
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
-        </div>
       </div>
     </div>
   </section>

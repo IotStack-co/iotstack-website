@@ -253,7 +253,7 @@ section.download .badges .badge-link img {
 }
 
 section.features .section-heading {
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 section.features .section-heading h2 {
@@ -266,12 +266,13 @@ section.features .section-heading p {
 
 section.features .device-container,
 section.features .feature-item {
-  max-width: 325px;
+  max-width: 225px;
   margin: 0 auto;
 }
 
 section.features .device-container {
   margin-bottom: 100px;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -281,8 +282,8 @@ section.features .device-container {
 }
 
 section.features .feature-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
