@@ -1,5 +1,8 @@
 // Styling for the features section
 section.features {
+    color: #000000;
+    background-color: #ffffff;
+
     .section-heading {
         margin-bottom: 10px;
         h2 {
@@ -15,7 +18,7 @@ section.features {
         margin: 0 auto;
     }
     .device-container {
-        margin-bottom: 100px;
+        margin-bottom: 0px;
         text-align: center;
         @media(min-width: 992px) {
             margin-bottom: 0;

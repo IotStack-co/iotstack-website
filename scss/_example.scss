@@ -6,9 +6,59 @@ section.example {
     padding-top: 50px;
     padding-bottom: 50px;
 
-    color: #ffffff;
-    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left top, $theme-secondary, $theme-tertiary);
-    background: url('../img/bg-pattern.png'), linear-gradient(to right bottom, $theme-secondary, $theme-tertiary);
+    color: #000000;
+    background-color: #ffffff;
 
     text-align: center;
+
+    .list {
+        //padding-right: 50px;
+        text-align: center;
+    }
+    
+    li:vis {
+        color: #999999;
+    }
+
+    ul {
+        float: right;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 150px;
+        background-color: #5f5f5f;
+      }
+      
+      li a {
+        display: block;
+        color: #ffffff;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover{
+        background-color: #222222;
+        color: #ffffff;
+      }
+
+      li a:focus {
+        color: #000000;
+        background-color: #bbbbbb;
+          
+      }
+
+      div.col-lg-4 {
+          padding-right: 0;
+      }
+
+      div.col-lg-6 {
+          background-color: #bbbbbb;
+          color: #000000;
+          padding-right: 0;
+          text-align: center;
+
+          p {
+            margin: 12%;
+          }
+      }
 }

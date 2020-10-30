@@ -52,7 +52,7 @@ p {
 }
 
 section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 section h2 {
@@ -217,6 +217,7 @@ header.masthead .device-container .screen img {
 }
 
 section.download {
+  background-color: #cacaca;
   position: relative;
   padding: 150px 0;
 }
@@ -252,6 +253,11 @@ section.download .badges .badge-link img {
   }
 }
 
+section.features {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 section.features .section-heading {
   margin-bottom: 10px;
 }
@@ -271,7 +277,7 @@ section.features .feature-item {
 }
 
 section.features .device-container {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
@@ -437,6 +443,18 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background: linear-gradient(to right, #d10000, #ff7b00);
 }
 
+.btn-outline2 {
+  color: #000000;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.btn-outline2:hover, .btn-outline2:focus, .btn-outline2:active, .btn-outline2.active {
+  color: #000000;
+  border-color: #000000;
+  background: linear-gradient(to right, #d10000, #ff7b00);
+}
+
 .btn {
   border-radius: 300px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
@@ -454,7 +472,66 @@ section.example {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+section.example .list {
+  text-align: center;
+}
+
+section.example li:vis {
+  color: #999999;
+}
+
+section.example ul {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #5f5f5f;
+}
+
+section.example li a {
+  display: block;
   color: #ffffff;
-  background: url("../img/bg-pattern.png"), linear-gradient(to right bottom, #ff7300, #0000ff);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+section.example li a:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+section.example li a:focus {
+  color: #000000;
+  background-color: #bbbbbb;
+}
+
+section.example div.col-lg-4 {
+  padding-right: 0;
+}
+
+section.example div.col-lg-6 {
+  background-color: #bbbbbb;
+  color: #000000;
+  padding-right: 0;
+  text-align: center;
+}
+
+section.example div.col-lg-6 p {
+  margin: 12%;
+}
+
+section.iotstack {
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #000000;
+  background-color: #cacaca;
   text-align: center;
 }

@@ -28,6 +28,21 @@
     }
 }
 
+.btn-outline2 {
+    color: #000000;
+    border: 1px solid;
+    border-color: #000000;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: #000000;
+        border-color: #000000;
+        background: -webkit-linear-gradient(to left, $theme-primary, $theme-primary2);
+        background: linear-gradient(to right, $theme-primary, $theme-primary2);
+    }
+}
+
 .btn {
     border-radius: 300px;
     @include alt-font;
