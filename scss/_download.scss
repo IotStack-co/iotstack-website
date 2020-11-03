@@ -1,8 +1,8 @@
 // Styling for the download section
 section.download {
-    background-color: #cacaca;
+    color: #ffffff;
+    background-color: #1e1e1e;
     position: relative;
-    padding: 150px 0;
     h2 {
         font-size: 50px;
         margin-top: 0;
@@ -27,5 +27,8 @@ section.download {
         h2 {
             font-size: 70px;
         }
+    }
+    .text-muted2 {
+        color: #8d8d8d;
     }
 }

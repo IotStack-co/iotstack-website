@@ -37,10 +37,13 @@
               <a class="nav-link js-scroll-trigger" href="#download">Download</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#example">Example</a>
+              <a class="nav-link js-scroll-trigger" href="#iotstack">IoTStack</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#example">Example</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -49,7 +52,7 @@
         </div>
       </div>
     </nav>
-    <!--========== NAVIGATION ==========--> 
+    <!--========== NAVIGATION ==========-->
     <!--============ HEADER ============-->
     <header class="masthead">
       <div class="container h-100">
@@ -75,22 +78,22 @@
         <div class="row">
           <div class="col-md-8 mx-auto">
             <h2 class="section-heading">Discover what all the buzz is about!</h2>
-            <p>We are on the way to provide a reliable stack of proven open source components which will help you to build a simple yet powerful IoT infrastructure. Our app stack is available on docker making use of docker-compose to give you the best possible experience on setting up IoTStack! Discover our Repository and download scripts now to get started!</p>
-            <a href="https://github.com/IotStack-co/iotstack-docker-tiguitto" target="_blank" class="btn btn-outline2 btn-xl js-scroll-trigger">Go to GitHub!</a>
+            <p class="text-muted2">We are on the way to provide a reliable stack of proven open source components which will help you to build a simple yet powerful IoT infrastructure. Our app stack is available on docker making use of docker-compose to give you the best possible experience on setting up IoTStack! Discover our Repository and download scripts now to get started!</p>
+            <a href="https://github.com/IotStack-co/iotstack-docker-tiguitto" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Go to GitHub!</a>
           </div>
         </div>
       </div>
     </section>
     <!--=========== DOWNLOAD ===========-->
-    <!--============ EXAMPLE ===========-->
-    <section class="example" id="example">
+    <!--=========== IOTSTACK ===========-->
+    <section class="iotstack" id="iotstack">
       <div class="container">
         <h2>Our IoTStack</h2>
-        <div class="row h-100">
+        <div class="row">
         <img src="img/hintergrund_iot.png" class="figure-img" alt="">
         </div>
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="row-iot">
+          <div class="list">
             <ul>
               <li><a onclick="switch_text(0);" href="#MQTT">MQTT</a></li>
               <li><a onclick="switch_text(1);" href="#Mosquitto">Mosquitto</a></li>
@@ -102,7 +105,7 @@
               <li><a onclick="switch_text(7);" href="#SPS">SPS</a></li>
             </ul>
           </div>
-          <div class="col-lg-6">
+          <div class="textfield">
             <p id="description_text"></p>
             <script type = "text/javascript">
               var descriptions = new Array(
@@ -123,16 +126,30 @@
         </div>
       </div>
     </section>
-  <!--============ EXAMPLE ===========-->
-  <!--=========== IOTSTACK ===========-->
-  <section class="iotstack" id="iotstack">
-    <div class="container">
-      <h2>test</h2>
-    </div>
-  </section>
-  <!--=========== IOTSTACK ===========-->
-  <!--=========== FEATURES ===========-->
+    <!--=========== IOTSTACK ===========-->
+    <!--=========== FEATURES ===========-->
     <section class="features" id="features">
+      <div class="container">
+        <h2>General about IoTStack</h2><br>
+        <h1>IoT</h1>
+        <p class="text-muted2">In the Internet of Things (IoT), objects are given a unique identity and can communicate with each other or receive commands. With the Internet of Things, applications can be automated and tasks can be performed without external intervention.
+        </p><br><br>
+        <h1>Basis</h1>
+        <p class="text-muted2">In addition to the possibility of communication between the devices (machine-to-machine communication, M2M), many of the networked objects provide an interface via the Internet that allows a user to operate and control the devices from any location.
+        </p><br><br>
+        <h1>Technical basics of the Internet of Things</h1>
+        <p class="text-muted2">The Internet and microprocessor technology form the technical basis of the Internet of Things. Thanks to ever cheaper, smaller and more powerful microprocessors, objects can be equipped with electronic intelligence with relatively little effort. You will also receive a wired or wireless interface for connection to the Internet and a unique Internet address. They use these to send or receive their data and commands. The wireless communication technologies used include WLAN, Bluetooth or mobile phone standards such as UMTS and LTE.Translated with www.DeepL.com/Translator (free version)
+        </p><br><br>
+        <h1>Application of the Internet of Things</h1>
+        <p class="text-muted2">There are numerous applications of the Internet of Things. In the private sector, for example, the technology is used for building automation and the smart home. Typical applications include lighting control, alarm systems and remote monitoring, automatic heating and climate control or smart metering.
+        </p><br><br><br>
+        <h1>Click here to see our example of what you can do with IoT!</h1><br>
+        <a href="#example" class="btn btn-outline btn-xl js-scroll-trigger">EXAMPLE</a>
+      </div>
+    </section>
+    <!--=========== FEATURES ===========-->
+    <!--============ EXAMPLE ===========-->
+    <section class="example" id="example">
       <div class="container">
         <div class="section-heading text-center">
           <h2>What options you can do whis IoTStack?</h2>
@@ -150,8 +167,17 @@
             document.getElementById("image").src = images[index];
             }
           </script>
+          <img src="img/coffeemachine.png" id="image" class="img-fluid" height="auto" width="auto"  alt="" />
           <div class="container-fluid">
-            <img src="img/coffeemachine.png" id="image" class="img-fluid" height="auto" width="auto"  alt="" />
+            <p>Kaffeemaschiene<br>
+               - Das ist unser Projekt zu Iot. Diese Kaffeemaschiene hat zwei Temperatursensoren und ein abstandssensor eingebaut, aber dazu mehr bei Hardware
+               Grafana<br>
+               - Hier sehen Sie das Dashboard zu unserem Projekt. Es ist übersichtlich und anschauend gestaltet, damit man alles auf einem Blick hat.
+               Hardware<br>
+               - In dem Bild sehen Sie in der Mitte den arduino uno. Auf diesem Board läuft der ganze code. Dieser ist mit dem ESP8266 (links auf dem Bild) verbunden. Der ESP8266 schickt die Daten von der Kaffeemaschiene per WiFi an den Pi (recht auf dem Bild). Dieser schickt die Daten weiter an Influxdb.
+               Software<br>
+               -Hier sehen Sie einen Teil von dem Code, der auf dem arduino uno läuft. Durch diesen code werden die Daten erfasst und von gerät zu gerät schlussendlich zu Grafana geschickt.
+            </p>
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
@@ -188,7 +214,7 @@
         </div>
       </div>
     </section>
-    <!--=========== FEATURES ===========-->
+    <!--============ EXAMPLE ===========-->
     <!--============== CTA =============-->
     <section class="cta">
       <div class="cta-content">
