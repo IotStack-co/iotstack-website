@@ -1,165 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--============= HEAD =============-->
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>IoT Stack - Your open source blueprint for small to medium IoT projects</title>
-    
-    <!-- create callback function on window loaded-->
-    <script type="text/javascript">
-      function load_first_content() {
-        // switch text for upper description
-        switch_text(0);
-        document.getElementById("MQTT").focus();
-        // switch text and image for detailed descrioption
-        switch_img(0),switch_text2(0);
-      }
-      window.onload = load_first_content;
-    </script>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-    <!-- Custom styles for this template -->
-    <link href="css/new-age.min.css" rel="stylesheet">
-  </head>
-  <!--============= HEAD =============-->
-  <!--============= BODY =============-->
-  <body id="page-top">
-    <!--========== NAVIGATION ==========-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="banner"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">GitHub</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#iotstack">IoTStack</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#example">Example</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
+<!--============= HEAD =============-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>IoT Stack - Your open source blueprint for small to medium IoT projects</title>
+  <!-- create callback function on window loaded-->
+  <script type="text/javascript">
+    function load_first_content() {
+    // switch text for upper description
+    switch_text(0);
+    // switch text and image for detailed descrioption
+    switch_img(0),switch_text2(0);
+    }
+    window.onload = load_first_content;
+  </script>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/new-age.min.css" rel="stylesheet">
+</head>
+<!--============= HEAD =============-->
+<!--============= BODY =============-->
+<body id="page-top">
+  <!--========== NAVIGATION ==========-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="banner"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+       <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#iotstack">IoTStack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#example">Example</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--========== NAVIGATION ==========-->
+  <!--============ HEADER ============-->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5"> Internet of Things (IoT) & Industry 4.0</h1>
+            <h2 class="mb-5">Orchestrate prooven open source services and tools to build you own IoT or IIoT stack for small and medium projects.</h2 class="mb-5">
+            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now!</a>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+          <img src="img/net.png" class="figure-img" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--============ HEADER ============-->
+  <!--=========== DOWNLOAD ===========-->
+  <section class="download text-center" id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="section-heading">Discover what all the buzz is about!</h2>
+          <p class="text-muted2">We are on the way to provide a reliable stack of proven open source components which will help you to build a simple yet powerful IoT infrastructure. Our app stack is available on docker making use of docker-compose to give you the best possible experience on setting up IoTStack! Discover our Repository and download scripts now to get started!</p>
+          <a href="https://github.com/IotStack-co/iotstack-docker-tiguitto" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Go to GitHub!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=========== DOWNLOAD ===========-->
+  <!--=========== IOTSTACK ===========-->
+  <section class="iotstack" id="iotstack">
+    <div class="container">
+      <h2>Our IoTStack</h2>
+      <div class="row_picture">
+        <img src="img/hintergrund_iot.png" class="figure-img" alt="">
+      </div>
+      <div class="row-iot">
+        <div class="list">
+          <ul>
+            <div class="toggle-buttons together">
+              <li>
+                <input type="radio" id="MQTT" name="group-iot" />
+                <label onclick="switch_text(0);" for="MQTT">MQTT</label>
+              </li>
+              <li>
+                <input type="radio" id="Mosquitto" name="group-iot" />
+                <label onclick="switch_text(1);" for="Mosquitto">Mosquitto</label>
+              </li>
+              <li>
+                <input type="radio" id="Telegraf" name="group-iot" />
+                <label onclick="switch_text(2);" for="Telegraf">Telegraf</label>
+              </li>
+              <li>
+                <input type="radio" id="Influx" name="group-iot" />
+                <label onclick="switch_text(3);" for="Influx">Influx</label>
+              </li>
+              <li>
+                <input type="radio" id="Grafana" name="group-iot" />
+                <label onclick="switch_text(4);" for="Grafana">Grafana</label>
+              </li>
+              <li>
+                <input type="radio" id="APP" name="group-iot" />
+                <label onclick="switch_text(5);" for="APP">APP</label>
+              </li>
+              <li>
+                <input type="radio" id="Gateway" name="group-iot" />
+                <label onclick="switch_text(6);" for="Gateway">Gateway</label>
+              </li>
+              <li>
+                <input type="radio" id="SPS" name="group-iot" />
+                <label onclick="switch_text(7);" for="SPS">SPS</label>
+              </li>
+            </div>
           </ul>
         </div>
-      </div>
-    </nav>
-    <!--========== NAVIGATION ==========-->
-    <!--============ HEADER ============-->
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5"> Internet of Things (IoT) & Industry 4.0</h1>
-              <h2 class="mb-5">Orchestrate prooven open source services and tools to build you own IoT or IIoT stack for small and medium projects.</h2 class="mb-5">
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now!</a>
-            </div>
-          </div>
-          <div class="col-lg-5 my-auto">
-            <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-            <img src="img/net.png" class="figure-img" alt="">
-          </div>
-        </div>
-      </div>
-    </header>
-    <!--============ HEADER ============-->
-    <!--=========== DOWNLOAD ===========-->
-    <section class="download text-center" id="download">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Discover what all the buzz is about!</h2>
-            <p class="text-muted2">We are on the way to provide a reliable stack of proven open source components which will help you to build a simple yet powerful IoT infrastructure. Our app stack is available on docker making use of docker-compose to give you the best possible experience on setting up IoTStack! Discover our Repository and download scripts now to get started!</p>
-            <a href="https://github.com/IotStack-co/iotstack-docker-tiguitto" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Go to GitHub!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== DOWNLOAD ===========-->
-    <!--=========== IOTSTACK ===========-->
-    <section class="iotstack" id="iotstack">
-      <div class="container">
-        <h2>Our IoTStack</h2>
-        <div class="row_picture">
-        <img src="img/hintergrund_iot.png" class="figure-img" alt="">
-        </div>
-        <div class="row-iot">
-          <div class="list">
-            <ul>
-              <div class="toggle-buttons together">
-                <li>
-                  <input type="radio" id="MQTT" name="group-iot" />
-                  <label onclick="switch_text(0);" for="MQTT">MQTT</label>
-                </li>
-                <li>
-                  <input type="radio" id="Mosquitto" name="group-iot" />
-                  <label onclick="switch_text(1);" for="Mosquitto">Mosquitto</label>
-                </li>
-                <li>
-                  <input type="radio" id="Telegraf" name="group-iot" />
-                  <label onclick="switch_text(2);" for="Telegraf">Telegraf</label>
-                </li>
-                <li>
-                  <input type="radio" id="Influx" name="group-iot" />
-                  <label onclick="switch_text(3);" for="Influx">Influx</label>
-                </li>
-                <li>
-                  <input type="radio" id="Grafana" name="group-iot" />
-                  <label onclick="switch_text(4);" for="Grafana">Grafana</label>
-                </li>
-                <li>
-                  <input type="radio" id="APP" name="group-iot" />
-                  <label onclick="switch_text(5);" for="APP">APP</label>
-                </li>
-                <li>
-                  <input type="radio" id="Gateway" name="group-iot" />
-                  <label onclick="switch_text(6);" for="Gateway">Gateway</label>
-                </li>
-                <li>
-                  <input type="radio" id="SPS" name="group-iot" />
-                  <label onclick="switch_text(7);" for="SPS">SPS</label>
-                </li>
-              </div>
-            </ul>
-          </div>
-          <script>
-            // Add active class to the current button (highlight it)
-            var header = document.getElementById("myDIV");
-            var btns = header.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
-              btns[i].addEventListener("click", function() {
+        <script>
+          // Add active class to the current button (highlight it)
+          var header = document.getElementById("myDIV");
+          var btns = header.getElementsByClassName("btn");
+          for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
               var current = document.getElementsByClassName("active");
               current[0].className = current[0].className.replace(" active", "");
               this.className += " active";
-              });
-            }
-          </script>
-          <div class="textfield">
-            <p id="description_text"></p>
-            <script type = "text/javascript">
-              var descriptions = new Array(
+            });
+          }
+        </script>
+        <div class="textfield">
+          <p id="description_text"></p>
+          <script type = "text/javascript">
+            var descriptions = new Array(
               'MQTT sent the collected data to Influx. It stands for Message Queuing Telemetry Transport and is a network protocol. This protocol uses machine-to-machine communication, which enables the transfer of data between devices.',
               'Mosquitto is an open source  message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers.',
               'Telegraf is a plug-in-controlled server agent for collecting and sending metrics and events from databases, systems and IoT sensors.',
@@ -168,183 +165,160 @@
               'The app displays the data as in Grafana and also sends data back again.',
               'A gateway is a piece of network hardware that is used in telecommunications for telecommunications networks and allows data to flow from one discrete network to another.',
               'It stands for Programmed Logic Controller and they are used to control or regulate machines and systems.'
-              );
-              function switch_text(index){
-              document.getElementById("description_text").innerHTML = descriptions[index];
-              }
-            </script>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== IOTSTACK ===========-->
-    <!--=========== FEATURES ===========-->
-    <section class="features" id="features">
-      <div class="container">
-        <h2>What is an IoTStack?</h2><br>
-        <h1>IoT</h1>
-          <a2 class="text-muted2">In the IoTStack?
-          </a2>
-          <a2>
-            Internet of Things (IoT)
-          </a2>
-          <a2 class="text-muted2">
-            , objects are given a unique identity and can communicate with each other or receive commands. With the </a2><a2>
-            Internet of Things
-          </a2>
-          <a2 class="text-muted2">
-            , applications can be automated and tasks can be performed without external intervention.
-            <br><br>In addition to the possibility of communication between the devices
-          </a2>
-          <a2>
-            (Machine-to-Machine communication, M2M)
-          </a2>
-          <a2 class="text-muted2">
-            , many of the networked objects provide an interface via the Internet that allows a user to operate and control the devices from any location.
-            <br><br>
-            The Internet and microprocessor technology form the technical basis of the
-          </a2>
-          <a2>
-            Internet of Things
-          </a2>
-          <a2 class="text-muted2">
-            . Thanks to ever cheaper, smaller and more powerful microprocessors, objects can be equipped with electronic intelligence with relatively little effort. You will also receive a wired or wireless interface for connection to the Internet and a unique Internet address. They use these to send or receive their data and commands. The wireless communication technologies used include WLAN, Bluetooth or mobile phone standards such as UMTS and LTE.
-            <br><br>There are numerous applications of the </a2><a2>
-            Internet of Things
-          </a2>
-            <a2 class="text-muted2">
-            . In the private sector, for example, the technology is used for building automation and the smart home. Typical applications include lighting control, alarm systems and remote monitoring, automatic heating and climate control or smart metering.
-          </a2><br><br><br>
-          <h1>Click here to see our example of what you can do with IoT!</h1><br>
-        <a href="#example" class="btn btn-outline btn-xl js-scroll-trigger">EXAMPLE</a>
-      </div>
-    </section>
-    <!--=========== FEATURES ===========-->
-    <!--============ EXAMPLE ===========-->
-    <section class="example" id="example">
-      <div class="container">
-        <div class="section-heading text-center">
-          <h2>What options you can do with an IoTStack?</h2>
-          <p class="text-muted">Here is one example what a IoTStack can be!</p>
-        </div>
-        <div class="row_image_switch">
-          <script type = "text/javascript">
-            var images = new Array(
-              'img/coffeemachine.png' ,
-              'img/Grafana.png' ,
-              'img/hardware.png' ,
-              'img/code.png'
             );
-            function switch_img(index){
-            document.getElementById("image").src = images[index];
+            function switch_text(index){
+            document.getElementById("description_text").innerHTML = descriptions[index];
             }
           </script>
-          <img src="img/coffeemachine.png" id="image" class="img-fluid" height="auto" width="auto"  alt="" />
-        </div>
-          <div class="rowtext">
-            <p id="descriptions_example_text"></p>
-            <script type = "text/javascript">
-              var descriptions_example = new Array(
-              'This is our project on Iot. This coffee machine has two temperature sensors and a distance sensor built in.',
-              'Here you can see the dashboard for our project. It is clearly arranged and visualized, so you can see everything at a glance',
-              'In the middle of the picture you can see the Arduino Uno. All the code runs on the board. It is connected to the ESP8266 (on the left side of the picture). The ESP8266 sends the data from the coffee machine via WiFi to the Pi (right in the picture). This sends the data to Influxdb.',
-              'Here you can see a part of the code running on the Arduino Uno. This code collects the data and sends it from device to device to Grafana.'
-              );
-              function switch_text2(index){
-              document.getElementById("descriptions_example_text").innerHTML = descriptions_example[index];
-              }
-            </script>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-                <div class="feature-item">
-                  <button id="first_btn" class="btn"><i class="fas fa-coffee" onclick="switch_img(0),switch_text2(0);"></i></button>
-                  <h3>Coffeemachine</h3>
-                  <!--<p class="text-muted">Our example of an IoTStack as a coffeemachine.</p>-->
-                </div>
-                <div class="feature-item">
-                  <button class="btn"><i class="icon-graph" onclick="switch_img(1),switch_text2(1);"></i></button>
-                  <h3>Grafana</h3>
-                  <!--<p class="text-muted">The dashboard for the project.</p>-->
-                </div>
-                <div class="feature-item">
-                  <button class="btn"><i class="fa fa-microchip" onclick="switch_img(2),switch_text2(2);"></i></button>
-                  <h3>Hardware</h3>
-                  <!--<p class="text-muted">You needn't much for a IoTStack.</p>-->
-                </div>
-                <div class="feature-item">
-                  <button class="btn"><i class="icon-layers" onclick="switch_img(3),switch_text2(3);"></i></button>
-                  <h3>Software</h3>
-                  <!--<p class="text-muted">Some code example of the project.</p>-->
-                </div>
-            </div>
-          </div>
-        
-      </div>
-    </section>
-    <!--============ EXAMPLE ===========-->
-    <!--============== CTA =============-->
-    <section class="cta">
-      <div class="cta-content">
-        <div class="container">
-          <h2>Begin with IoT</h2>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
         </div>
       </div>
-    </section>
-    <!--============== CTA =============-->
-    <!--============ CONTACT ===========-->
-    <section class="contact bg-primary" id="contact">
-      <div class="container">
-        <h2>You can find us here!</h2>
-        <ul class="list-inline list-social">
-          <li class="list-inline-item social-biba">
-            <a href="https://www.biba.uni-bremen.de/">
-              <div title="BIBA"><img src="img/biba.png" class="img-fluid" alt="">
-              </div>
-            </a>
-          </li>
-          <li class="list-inline-item social-github">
-            <a href="https://github.com/IotStack-co/iotstack-docker-tiguitto">
-              <div title="Github IoTStack"><i class="fab fa-github"></i>
-              </div>
-            </a>
-          </li>
-          <li class="list-inline-item social-swms">
-            <a href="https://swms-consulting.de/">
-              <div title="SWMS Consulting"><img src="img/swms.png" class="img-fluid" alt="">
-              </div>
-            </a>
-          </li>
-        </ul>
+    </div>
+  </section>
+  <!--=========== IOTSTACK ===========-->
+  <!--=========== FEATURES ===========-->
+  <section class="features" id="features">
+    <div class="container">
+      <h2>What is an IoTStack?</h2>
+      <br>
+      <h1>IoT</h1>
+      <a2 class="text-muted2">In the IoTStack?</a2>
+      <a2>Internet of Things (IoT)</a2>
+      <a2 class="text-muted2">, objects are given a unique identity and can communicate with each other or receive commands. With the</a2>
+      <a2>Internet of Things</a2>
+      <a2 class="text-muted2">, applications can be automated and tasks can be performed without external intervention.<br>
+      <br>In addition to the possibility of communication between the devices</a2>
+      <a2>(Machine-to-Machine communication, M2M)</a2>
+      <a2 class="text-muted2">, many of the networked objects provide an interface via the Internet that allows a user to operate and control the devices from any location.<br>
+      <br>The Internet and microprocessor technology form the technical basis of the</a2>
+      <a2>Internet of Things</a2>
+      <a2 class="text-muted2">. Thanks to ever cheaper, smaller and more powerful microprocessors, objects can be equipped with electronic intelligence with relatively little effort. You will also receive a wired or wireless interface for connection to the Internet and a unique Internet address. They use these to send or receive their data and commands. The wireless communication technologies used include WLAN, Bluetooth or mobile phone standards such as UMTS and LTE.<br>
+      <br>There are numerous applications of the</a2>
+      <a2>Internet of Things</a2>
+      <a2 class="text-muted2">. In the private sector, for example, the technology is used for building automation and the smart home. Typical applications include lighting control, alarm systems and remote monitoring, automatic heating and climate control or smart metering.</a2>
+      <br><br><br>
+      <h1>Click here to see our example of what you can do with IoT!</h1>
+      <br>
+      <a href="#example" class="btn btn-outline btn-xl js-scroll-trigger">EXAMPLE</a>
+    </div>
+  </section>
+  <!--=========== FEATURES ===========-->
+  <!--============ EXAMPLE ===========-->
+  <section class="example" id="example">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>What options you can do with an IoTStack?</h2>
+        <p class="text-muted">Here is one example what a IoTStack can be!</p>
       </div>
-    </section>
-    <!--============ CONTACT ===========-->
-    <!--============ FOOTER ============-->
-    <footer>
-      <div class="container">
-        <p>&copy; Your Website 2020. All Rights Reserved.</p>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#page-top">Privacy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#page-top">Contact</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#page-top">Imprint</a>
-          </li>
-        </ul>
+      <div class="row_image_switch">
+        <script type = "text/javascript">
+          var images = new Array(
+            'img/coffeemachine.png',
+            'img/Grafana.png',
+            'img/hardware.png',
+            'img/code.png'
+          );
+            function switch_img(index){
+            document.getElementById("image").src = images[index];
+          }
+        </script>
+        <img src="img/coffeemachine.png" id="image" class="img-fluid" height="auto" width="auto"  alt="" />
       </div>
-    </footer>
-    <!--============ FOOTER ============-->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
-  </body>
-  <!--============= BODY =============-->
+      <div class="rowtext">
+        <p id="descriptions_example_text"></p>
+        <script type = "text/javascript">
+          var descriptions_example = new Array(
+            'This is our project on Iot. This coffee machine has two temperature sensors and a distance sensor built in.',
+            'Here you can see the dashboard for our project. It is clearly arranged and visualized, so you can see everything at a glance',
+            'In the middle of the picture you can see the Arduino Uno. All the code runs on the board. It is connected to the ESP8266 (on the left side of the picture). The ESP8266 sends the data from the coffee machine via WiFi to the Pi (right in the picture). This sends the data to Influxdb.',
+            'Here you can see a part of the code running on the Arduino Uno. This code collects the data and sends it from device to device to Grafana.'
+          );
+          function switch_text2(index){
+            document.getElementById("descriptions_example_text").innerHTML = descriptions_example[index];
+          }
+        </script>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="feature-item">
+            <button id="first_btn" class="btn"><i class="fas fa-coffee" onclick="switch_img(0),switch_text2(0);"></i></button>
+            <h3>Coffeemachine</h3>
+          </div>
+          <div class="feature-item">
+            <button class="btn"><i class="icon-graph" onclick="switch_img(1),switch_text2(1);"></i></button>
+            <h3>Grafana</h3>
+          </div>
+          <div class="feature-item">
+            <button class="btn"><i class="fa fa-microchip" onclick="switch_img(2),switch_text2(2);"></i></button>
+            <h3>Hardware</h3>
+          </div>
+          <div class="feature-item">
+            <button class="btn"><i class="icon-layers" onclick="switch_img(3),switch_text2(3);"></i></button>
+            <h3>Software</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--============ EXAMPLE ===========-->
+  <!--============== CTA =============-->
+  <section class="cta">
+  <div class="cta-content">
+  <div class="container">
+  <h2>Begin with IoT</h2>
+  <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+  </div>
+  </div>
+  </section>
+  <!--============== CTA =============-->
+  <!--============ CONTACT ===========-->
+  <section class="contact bg-primary" id="contact">
+    <div class="container">
+      <h2>You can find us here!</h2>
+      <ul class="list-inline list-social">
+        <li class="list-inline-item social-biba">
+          <a href="https://www.biba.uni-bremen.de/">
+            <div title="BIBA"><img src="img/biba.png" class="img-fluid" alt=""></div>
+          </a>
+        </li>
+        <li class="list-inline-item social-github">
+          <a href="https://github.com/IotStack-co/iotstack-docker-tiguitto">
+            <div title="Github IoTStack"><i class="fab fa-github"></i></div>
+          </a>
+        </li>
+        <li class="list-inline-item social-swms">
+          <a href="https://swms-consulting.de/">
+            <div title="SWMS Consulting"><img src="img/swms.png" class="img-fluid" alt=""></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--============ CONTACT ===========-->
+  <!--============ FOOTER ============-->
+  <footer>
+    <div class="container">
+      <p>&copy; Your Website 2020. All Rights Reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#page-top">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#page-top">Contact</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#page-top">Imprint</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!--============ FOOTER ============-->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/new-age.min.js"></script>
+</body>
+<!--============= BODY =============-->
 </html>

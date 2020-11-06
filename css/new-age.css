@@ -601,33 +601,6 @@ section.iotstack .row-iot .list ul .together input {
   left: 0;
 }
 
-section.iotstack .row-iot .list ul li:target {
-  color: #000000;
-  background-color: #bbbbbb;
-}
-
-section.iotstack .row-iot .list ul li a {
-  display: block;
-  color: #ffffff;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-section.iotstack .row-iot .list ul li a:hover {
-  background-color: #222222;
-  color: #ffffff;
-}
-
-section.iotstack .row-iot .list ul li a.active:active {
-  color: #000000;
-  background-color: #bbbbbb;
-}
-
-section.iotstack .row-iot .list ul li a:focus {
-  color: #000000;
-  background-color: #bbbbbb;
-}
-
 section.iotstack .row-iot div.textfield {
   width: calc(100% - 150px);
   background-color: #bbbbbb;
