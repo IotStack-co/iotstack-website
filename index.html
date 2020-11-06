@@ -7,6 +7,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>IoT Stack - Your open source blueprint for small to medium IoT projects</title>
+    
+    <!-- create callback function on window loaded-->
+    <script type="text/javascript">
+      function load_first_content() {
+        // switch text for upper description
+        switch_text(0);
+        document.getElementById("MQTT").focus();
+        // switch text and image for detailed descrioption
+        switch_img(0),switch_text2(0);
+      }
+      window.onload = load_first_content;
+      </script>
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
@@ -34,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+              <a class="nav-link js-scroll-trigger" href="#download">GitHub</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#iotstack">IoTStack</a>
@@ -89,22 +102,34 @@
     <section class="iotstack" id="iotstack">
       <div class="container">
         <h2>Our IoTStack</h2>
-        <div class="row">
+        <div class="row_picture">
         <img src="img/hintergrund_iot.png" class="figure-img" alt="">
         </div>
         <div class="row-iot">
           <div class="list">
             <ul>
-              <li><a onclick="switch_text(0);" href="#MQTT">MQTT</a></li>
-              <li><a onclick="switch_text(1);" href="#Mosquitto">Mosquitto</a></li>
-              <li><a onclick="switch_text(2);" href="#Telegraf">Telegraf</a></li>
-              <li><a onclick="switch_text(3);" href="#Influx">Influx</a></li>
-              <li><a onclick="switch_text(4);" href="#Grafana">Grafana</a></li>
-              <li><a onclick="switch_text(5);" href="#APP">APP</a></li>
-              <li><a onclick="switch_text(6);" href="#Gateway">Gateway</a></li>
-              <li><a onclick="switch_text(7);" href="#SPS">SPS</a></li>
+              <li><a onclick="switch_text(0);" id='MQTT' href="#MQTT">MQTT</a></li>
+              <li><a onclick="switch_text(1);" id='Mosquitto' href="#Mosquitto">Mosquitto</a></li>
+              <li><a onclick="switch_text(2);" id='Telegraf' href="#Telegraf">Telegraf</a></li>
+              <li><a onclick="switch_text(3);" id='Influx' href="#Influx">Influx</a></li>
+              <li><a onclick="switch_text(4);" id='Grafana' href="#Grafana">Grafana</a></li>
+              <li><a onclick="switch_text(5);" id='APP' href="#APP">APP</a></li>
+              <li><a onclick="switch_text(6);" id='Gateway' href="#Gateway">Gateway</a></li>
+              <li><a onclick="switch_text(7);" id='SPS' href="#SPS">SPS</a></li>
             </ul>
           </div>
+          <script>
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("myDIV");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+              });
+            }
+          </script>
           <div class="textfield">
             <p id="description_text"></p>
             <script type = "text/javascript">
@@ -130,20 +155,41 @@
     <!--=========== FEATURES ===========-->
     <section class="features" id="features">
       <div class="container">
-        <h2>General about IoTStack</h2><br>
+        <h2>What is an IoTStack?</h2><br>
         <h1>IoT</h1>
-        <p class="text-muted2">In the Internet of Things (IoT), objects are given a unique identity and can communicate with each other or receive commands. With the Internet of Things, applications can be automated and tasks can be performed without external intervention.
-        </p><br><br>
-        <h1>Basis</h1>
-        <p class="text-muted2">In addition to the possibility of communication between the devices (machine-to-machine communication, M2M), many of the networked objects provide an interface via the Internet that allows a user to operate and control the devices from any location.
-        </p><br><br>
-        <h1>Technical basics of the Internet of Things</h1>
-        <p class="text-muted2">The Internet and microprocessor technology form the technical basis of the Internet of Things. Thanks to ever cheaper, smaller and more powerful microprocessors, objects can be equipped with electronic intelligence with relatively little effort. You will also receive a wired or wireless interface for connection to the Internet and a unique Internet address. They use these to send or receive their data and commands. The wireless communication technologies used include WLAN, Bluetooth or mobile phone standards such as UMTS and LTE.Translated with www.DeepL.com/Translator (free version)
-        </p><br><br>
-        <h1>Application of the Internet of Things</h1>
-        <p class="text-muted2">There are numerous applications of the Internet of Things. In the private sector, for example, the technology is used for building automation and the smart home. Typical applications include lighting control, alarm systems and remote monitoring, automatic heating and climate control or smart metering.
-        </p><br><br><br>
-        <h1>Click here to see our example of what you can do with IoT!</h1><br>
+          <a2 class="text-muted2">In the IoTStack?
+          </a2>
+          <a2>
+            Internet of Things (IoT)
+          </a2>
+          <a2 class="text-muted2">
+            , objects are given a unique identity and can communicate with each other or receive commands. With the </a2><a2>
+            Internet of Things
+          </a2>
+          <a2 class="text-muted2">
+            , applications can be automated and tasks can be performed without external intervention.
+            <br><br>In addition to the possibility of communication between the devices
+          </a2>
+          <a2>
+            (Machine-to-Machine communication, M2M)
+          </a2>
+          <a2 class="text-muted2">
+            , many of the networked objects provide an interface via the Internet that allows a user to operate and control the devices from any location.
+            <br><br>
+            The Internet and microprocessor technology form the technical basis of the
+          </a2>
+          <a2>
+            Internet of Things
+          </a2>
+          <a2 class="text-muted2">
+            . Thanks to ever cheaper, smaller and more powerful microprocessors, objects can be equipped with electronic intelligence with relatively little effort. You will also receive a wired or wireless interface for connection to the Internet and a unique Internet address. They use these to send or receive their data and commands. The wireless communication technologies used include WLAN, Bluetooth or mobile phone standards such as UMTS and LTE.
+            <br><br>There are numerous applications of the </a2><a2>
+            Internet of Things
+          </a2>
+            <a2 class="text-muted2">
+            . In the private sector, for example, the technology is used for building automation and the smart home. Typical applications include lighting control, alarm systems and remote monitoring, automatic heating and climate control or smart metering.
+          </a2><br><br><br>
+          <h1>Click here to see our example of what you can do with IoT!</h1><br>
         <a href="#example" class="btn btn-outline btn-xl js-scroll-trigger">EXAMPLE</a>
       </div>
     </section>
@@ -152,15 +198,15 @@
     <section class="example" id="example">
       <div class="container">
         <div class="section-heading text-center">
-          <h2>What options you can do whis IoTStack?</h2>
+          <h2>What options you can do with an IoTStack?</h2>
           <p class="text-muted">Here is one example what a IoTStack can be!</p>
         </div>
-        <div class="row">
+        <div class="row_image_switch">
           <script type = "text/javascript">
             var images = new Array(
-              'img/coffeemachine.png',
+              'img/coffeemachine.png' ,
               'img/Grafana.png' ,
-              'img/hardware.png',
+              'img/hardware.png' ,
               'img/code.png'
             );
             function switch_img(index){
@@ -168,50 +214,46 @@
             }
           </script>
           <img src="img/coffeemachine.png" id="image" class="img-fluid" height="auto" width="auto"  alt="" />
+        </div>
+          <div class="rowtext">
+            <p id="descriptions_example_text"></p>
+            <script type = "text/javascript">
+              var descriptions_example = new Array(
+              'This is our project on Iot. This coffee machine has two temperature sensors and a distance sensor built in.',
+              'Here you can see the dashboard for our project. It is clearly arranged and visualized, so you can see everything at a glance',
+              'In the middle of the picture you can see the Arduino Uno. All the code runs on the board. It is connected to the ESP8266 (on the left side of the picture). The ESP8266 sends the data from the coffee machine via WiFi to the Pi (right in the picture). This sends the data to Influxdb.',
+              'Here you can see a part of the code running on the Arduino Uno. This code collects the data and sends it from device to device to Grafana.'
+              );
+              function switch_text2(index){
+              document.getElementById("descriptions_example_text").innerHTML = descriptions_example[index];
+              }
+            </script>
+          </div>
           <div class="container-fluid">
-            <p>Kaffeemaschiene<br>
-               - Das ist unser Projekt zu Iot. Diese Kaffeemaschiene hat zwei Temperatursensoren und ein abstandssensor eingebaut, aber dazu mehr bei Hardware
-               Grafana<br>
-               - Hier sehen Sie das Dashboard zu unserem Projekt. Es ist übersichtlich und anschauend gestaltet, damit man alles auf einem Blick hat.
-               Hardware<br>
-               - In dem Bild sehen Sie in der Mitte den arduino uno. Auf diesem Board läuft der ganze code. Dieser ist mit dem ESP8266 (links auf dem Bild) verbunden. Der ESP8266 schickt die Daten von der Kaffeemaschiene per WiFi an den Pi (recht auf dem Bild). Dieser schickt die Daten weiter an Influxdb.
-               Software<br>
-               -Hier sehen Sie einen Teil von dem Code, der auf dem arduino uno läuft. Durch diesen code werden die Daten erfasst und von gerät zu gerät schlussendlich zu Grafana geschickt.
-            </p>
             <div class="row">
-              <div class="col-lg-6">
                 <div class="feature-item">
-                  <button class="btn"><i class="fas fa-coffee" onclick="switch_img(0);"></i></button>
+                  <button id="first_btn" class="btn"><i class="fas fa-coffee" onclick="switch_img(0),switch_text2(0);"></i></button>
                   <h3>Coffeemachine</h3>
-                  <p class="text-muted">Our example of an IoTStack as a coffeemachine.</p>
+                  <!--<p class="text-muted">Our example of an IoTStack as a coffeemachine.</p>-->
                 </div>
-              </div>
-              <div class="col-lg-6">
                 <div class="feature-item">
-                  <button class="btn"><i class="icon-graph" onclick="switch_img(1);"></i></button>
+                  <button class="btn"><i class="icon-graph" onclick="switch_img(1),switch_text2(1);"></i></button>
                   <h3>Grafana</h3>
-                  <p class="text-muted">The dashboard for the project.</p>
+                  <!--<p class="text-muted">The dashboard for the project.</p>-->
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
                 <div class="feature-item">
-                  <button class="btn"><i class="fa fa-microchip" onclick="switch_img(2);"></i></button>
+                  <button class="btn"><i class="fa fa-microchip" onclick="switch_img(2),switch_text2(2);"></i></button>
                   <h3>Hardware</h3>
-                  <p class="text-muted">You needn't much for a IoTStack.</p>
+                  <!--<p class="text-muted">You needn't much for a IoTStack.</p>-->
                 </div>
-              </div>
-              <div class="col-lg-6">
                 <div class="feature-item">
-                  <button class="btn"><i class="icon-layers" onclick="switch_img(3);"></i></button>
+                  <button class="btn"><i class="icon-layers" onclick="switch_img(3),switch_text2(3);"></i></button>
                   <h3>Software</h3>
-                  <p class="text-muted">Some code example of the project.</p>
+                  <!--<p class="text-muted">Some code example of the project.</p>-->
                 </div>
-              </div>
             </div>
           </div>
-        </div>
+        
       </div>
     </section>
     <!--============ EXAMPLE ===========-->
