@@ -18,7 +18,7 @@
         switch_img(0),switch_text2(0);
       }
       window.onload = load_first_content;
-      </script>
+    </script>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -108,14 +108,40 @@
         <div class="row-iot">
           <div class="list">
             <ul>
-              <li><a onclick="switch_text(0);" id='MQTT' href="#MQTT">MQTT</a></li>
-              <li><a onclick="switch_text(1);" id='Mosquitto' href="#Mosquitto">Mosquitto</a></li>
-              <li><a onclick="switch_text(2);" id='Telegraf' href="#Telegraf">Telegraf</a></li>
-              <li><a onclick="switch_text(3);" id='Influx' href="#Influx">Influx</a></li>
-              <li><a onclick="switch_text(4);" id='Grafana' href="#Grafana">Grafana</a></li>
-              <li><a onclick="switch_text(5);" id='APP' href="#APP">APP</a></li>
-              <li><a onclick="switch_text(6);" id='Gateway' href="#Gateway">Gateway</a></li>
-              <li><a onclick="switch_text(7);" id='SPS' href="#SPS">SPS</a></li>
+              <div class="toggle-buttons together">
+                <li>
+                  <input type="radio" id="MQTT" name="group-iot" />
+                  <label onclick="switch_text(0);" for="MQTT">MQTT</label>
+                </li>
+                <li>
+                  <input type="radio" id="Mosquitto" name="group-iot" />
+                  <label onclick="switch_text(1);" for="Mosquitto">Mosquitto</label>
+                </li>
+                <li>
+                  <input type="radio" id="Telegraf" name="group-iot" />
+                  <label onclick="switch_text(2);" for="Telegraf">Telegraf</label>
+                </li>
+                <li>
+                  <input type="radio" id="Influx" name="group-iot" />
+                  <label onclick="switch_text(3);" for="Influx">Influx</label>
+                </li>
+                <li>
+                  <input type="radio" id="Grafana" name="group-iot" />
+                  <label onclick="switch_text(4);" for="Grafana">Grafana</label>
+                </li>
+                <li>
+                  <input type="radio" id="APP" name="group-iot" />
+                  <label onclick="switch_text(5);" for="APP">APP</label>
+                </li>
+                <li>
+                  <input type="radio" id="Gateway" name="group-iot" />
+                  <label onclick="switch_text(6);" for="Gateway">Gateway</label>
+                </li>
+                <li>
+                  <input type="radio" id="SPS" name="group-iot" />
+                  <label onclick="switch_text(7);" for="SPS">SPS</label>
+                </li>
+              </div>
             </ul>
           </div>
           <script>

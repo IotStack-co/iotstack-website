@@ -569,29 +569,61 @@ section.iotstack .row-iot .list ul {
   background-color: #5f5f5f;
 }
 
-section.iotstack .row-iot .list li a {
+section.iotstack .row-iot .list ul .toggle-buttons input[type="radio"] {
+  visibility: hidden;
+}
+
+section.iotstack .row-iot .list ul label {
+  color: #ffffff;
+  display: inline-block;
+  height: 40px;
+  width: 150px;
+  padding-top: 8px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+section.iotstack .row-iot .list ul label:focus {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+section.iotstack .row-iot .list ul .toggle-buttons input:checked + label {
+  background: #bbbbbb;
+  color: #000000;
+}
+
+section.iotstack .row-iot .list ul .together input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 0;
+  left: 0;
+}
+
+section.iotstack .row-iot .list ul li:target {
+  color: #000000;
+  background-color: #bbbbbb;
+}
+
+section.iotstack .row-iot .list ul li a {
   display: block;
   color: #ffffff;
   padding: 8px 16px;
   text-decoration: none;
 }
 
-section.iotstack .row-iot .list li a:hover {
+section.iotstack .row-iot .list ul li a:hover {
   background-color: #222222;
   color: #ffffff;
 }
 
-section.iotstack .row-iot .list li a.active:active {
+section.iotstack .row-iot .list ul li a.active:active {
   color: #000000;
   background-color: #bbbbbb;
 }
 
-section.iotstack .row-iot .list li a:target {
-  color: #000000;
-  background-color: #bbbbbb;
-}
-
-section.iotstack .row-iot .list li a:focus {
+section.iotstack .row-iot .list ul li a:focus {
   color: #000000;
   background-color: #bbbbbb;
 }

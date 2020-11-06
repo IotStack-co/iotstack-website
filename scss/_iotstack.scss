@@ -50,6 +50,42 @@ section.iotstack {
         padding: 0;
         width: 150px;
         background-color: #5f5f5f;
+      
+
+      .toggle-buttons input[type="radio"] {
+        visibility: hidden;
+      }
+
+      label {
+        color: #ffffff;
+        display: inline-block;
+        height: 40px;
+        width: 150px;
+        padding-top: 8px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      label:focus {
+        background-color: #222222;
+        color: #ffffff;
+      }
+      
+      .toggle-buttons input:checked + label {
+        background: #bbbbbb;
+        color: #000000;
+      }
+
+      .together input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        top: 0;
+        left: 0;
+      }
+
+      li:target{
+        color: #000000;
+        background-color: #bbbbbb;
       }
 
       li a {
@@ -69,16 +105,14 @@ section.iotstack {
         background-color: #bbbbbb;
       }
 
-      li a:target{
-        color: #000000;
-        background-color: #bbbbbb;
-      }
+      
 
       li a:focus {
         color: #000000;
         background-color: #bbbbbb;
       }
     }
+  }
 
     div.textfield {
       width: calc(100% - 150px);
