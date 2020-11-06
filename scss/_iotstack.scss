@@ -10,6 +10,18 @@ section.iotstack {
 
   text-align: center;
 
+  .row_picture {
+    display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: -9px;
+    border-color: #000000;
+      border-width: 1px;
+      border-style: solid;
+  }
   .row-iot {
     display: -ms-flexbox;
     display: flex;
@@ -17,12 +29,16 @@ section.iotstack {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+
     
 
     .list {
       //padding-right: 50px;
       text-align: center;
-
+      
       li:vis {
         color: #999999;
       }
@@ -48,7 +64,12 @@ section.iotstack {
         color: #ffffff;
       }
 
-      li a:active{
+      li a.active:active{
+        color: #000000;
+        background-color: #bbbbbb;
+      }
+
+      li a:target{
         color: #000000;
         background-color: #bbbbbb;
       }
@@ -73,6 +94,16 @@ section.iotstack {
         margin-bottom: 10%;
 
       }
+    }
+
+    .rowimage {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      margin-bottom: -8px;
     }
   }
 }

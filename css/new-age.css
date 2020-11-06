@@ -23,6 +23,11 @@ a:hover, a:focus {
   color: #e6e6e6;
 }
 
+a2 {
+  color: #ffffff;
+  transition: all .35s;
+}
+
 hr {
   max-width: 100px;
   margin: 25px auto 0;
@@ -483,6 +488,39 @@ section.example .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
+section.example .row_image_switch {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: -1px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  border-color: #000000;
+  border-width: 1px;
+  border-style: solid;
+}
+
+section.example .rowtext {
+  color: #000000;
+  height: 81px;
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: center;
+}
+
+section.example .rowtext p {
+  background-color: #bbbbbb;
+  margin-bottom: 0%;
+  padding-right: 5%;
+  padding-left: 5%;
+  border-color: #000000;
+  border-width: 1px;
+  border-style: solid;
+}
+
 section.iotstack {
   position: relative;
   width: 100%;
@@ -493,11 +531,25 @@ section.iotstack {
   text-align: center;
 }
 
+section.iotstack .row_picture {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: -9px;
+  border-color: #000000;
+  border-width: 1px;
+  border-style: solid;
+}
+
 section.iotstack .row-iot {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  border-color: #000000;
+  border-width: 1px;
+  border-style: solid;
 }
 
 section.iotstack .row-iot .list {
@@ -506,11 +558,6 @@ section.iotstack .row-iot .list {
 
 section.iotstack .row-iot .list li:vis {
   color: #999999;
-}
-
-section.iotstack .row-iot .list li :active {
-  background-color: #222222;
-  color: #ffffff;
 }
 
 section.iotstack .row-iot .list ul {
@@ -534,7 +581,12 @@ section.iotstack .row-iot .list li a:hover {
   color: #ffffff;
 }
 
-section.iotstack .row-iot .list li a:active {
+section.iotstack .row-iot .list li a.active:active {
+  color: #000000;
+  background-color: #bbbbbb;
+}
+
+section.iotstack .row-iot .list li a:target {
   color: #000000;
   background-color: #bbbbbb;
 }
@@ -557,4 +609,12 @@ section.iotstack .row-iot div.textfield p {
   margin-left: 5%;
   margin-top: 10%;
   margin-bottom: 10%;
+}
+
+section.iotstack .row-iot .rowimage {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: -8px;
 }

@@ -18,6 +18,11 @@ a {
     }
 }
 
+a2 {
+    color: $theme-link-bottom;
+    @include transition-all;
+}
+
 hr {
     max-width: 100px;
     margin: 25px auto 0;
