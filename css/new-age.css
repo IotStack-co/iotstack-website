@@ -534,9 +534,10 @@ section.iotstack {
 section.iotstack .row_picture {
   display: flex;
   flex-wrap: wrap;
+  width: auto;
   margin-right: -15px;
   margin-left: -15px;
-  margin-bottom: -9px;
+  margin-bottom: -1px;
   border-color: #000000;
   border-width: 1px;
   border-style: solid;
@@ -586,6 +587,16 @@ section.iotstack .row-iot .list ul label {
 section.iotstack .row-iot .list ul label:focus {
   background-color: #222222;
   color: #ffffff;
+}
+
+section.iotstack .row-iot .list ul label:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+section.iotstack .row-iot .list ul label:target {
+  background-color: #bbbbbb;
+  color: #000000;
 }
 
 section.iotstack .row-iot .list ul .toggle-buttons input:checked + label {

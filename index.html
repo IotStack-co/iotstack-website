@@ -12,6 +12,7 @@
     function load_first_content() {
     // switch text for upper description
     switch_text(0);
+    getElementById("MQTT").activate();
     // switch text and image for detailed descrioption
     switch_img(0),switch_text2(0);
     }
@@ -100,7 +101,7 @@
     <div class="container">
       <h2>Our IoTStack</h2>
       <div class="row_picture">
-        <img src="img/hintergrund_iot.png" class="figure-img" alt="">
+        <img src="img/hintergrund_iot.png" class="img-fluid" alt="">
       </div>
       <div class="row-iot">
         <div class="list">
@@ -108,7 +109,7 @@
             <div class="toggle-buttons together">
               <li>
                 <input type="radio" id="MQTT" name="group-iot" />
-                <label onclick="switch_text(0);" for="MQTT">MQTT</label>
+                <label id="MQTT" onclick="switch_text(0);" for="MQTT">MQTT</label>
               </li>
               <li>
                 <input type="radio" id="Mosquitto" name="group-iot" />
