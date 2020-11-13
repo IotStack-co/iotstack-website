@@ -14,6 +14,7 @@
     switch_text(0);
     // switch text and image for detailed descrioption
     switch_img(0),switch_text2(0);
+    document.getElementById("MQTT").active();
     }
     window.onload = load_first_content;
   </script>
@@ -108,7 +109,7 @@
             <div class="toggle-buttons together">
               <li>
                 <input type="radio" id="MQTT" name="group-iot" />
-                <label id="MQTT" onclick="switch_text(0);" for="MQTT">MQTT</label>
+                <label  onclick="switch_text(0);" for="MQTT">MQTT</label>
               </li>
               <li>
                 <input type="radio" id="Mosquitto" name="group-iot" />
@@ -207,7 +208,7 @@
     <div class="container">
       <div class="section-heading text-center">
         <h2>What options you can do with an IoTStack?</h2>
-        <p class="text-muted">Here is one example what a IoTStack can be!</p>
+        <p class="text-muted">This is only an basic demo of what you can do with an IoTStack!</p>
       </div>
       <div class="row_image_switch">
         <script type = "text/javascript">
@@ -246,7 +247,8 @@
           <div class="feature-item">
             <button class="btn"><i class="icon-graph" onclick="switch_img(1),switch_text2(1);"></i></button>
             <h3>Grafana</h3>
-          </div>
+            <!--<a href="https://demo2.iotstack.co:3000/?orgId=1" target="_blank" class="btn btn-outline2 btn-xl js-scroll-trigger">Our Grafana!</a>-->
+            </div>
           <div class="feature-item">
             <button class="btn"><i class="fa fa-microchip" onclick="switch_img(2),switch_text2(2);"></i></button>
             <h3>Hardware</h3>
@@ -254,9 +256,10 @@
           <div class="feature-item">
             <button class="btn"><i class="icon-layers" onclick="switch_img(3),switch_text2(3);"></i></button>
             <h3>Software</h3>
-          </div>
+          </div>           
         </div>
       </div>
+          
     </div>
   </section>
   <!--============ EXAMPLE ===========-->

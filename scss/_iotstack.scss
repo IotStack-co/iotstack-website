@@ -55,6 +55,11 @@ section.iotstack {
         visibility: hidden;
       }
 
+      .toggle-buttons:active[id="MQTT"] {
+        background-color: #bbbbbb;
+        color: #000000;
+      }
+
       label {
         color: #ffffff;
         display: inline-block;

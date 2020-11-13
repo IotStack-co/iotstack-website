@@ -574,6 +574,11 @@ section.iotstack .row-iot .list ul .toggle-buttons input[type="radio"] {
   visibility: hidden;
 }
 
+section.iotstack .row-iot .list ul .toggle-buttons:active[id="MQTT"] {
+  background-color: #bbbbbb;
+  color: #000000;
+}
+
 section.iotstack .row-iot .list ul label {
   color: #ffffff;
   display: inline-block;
