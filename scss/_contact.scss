@@ -4,8 +4,9 @@ section.contact {
     h2 {
         margin-top: 0;
         margin-bottom: 25px;
+        color: #ffffff;
         i {
-            color: $brand-google-plus;
+            color: $brand-swms;
         }
     }
     ul.list-social {
@@ -20,27 +21,27 @@ section.contact {
                 color: white;
                 border-radius: 100%;
             }
-            &.social-twitter {
+            &.social-github {
                 a {
-                    background-color: $brand-twitter;
+                    background-color: $brand-github;
                     &:hover {
-                        background-color: darken($brand-twitter, 5%);
+                        background-color: darken($brand-github, 5%);
                     }
                 }
             }
-            &.social-facebook {
+            &.social-biba {
                 a {
-                    background-color: $brand-facebook;
+                    background-color: $brand-biba;
                     &:hover {
-                        background-color: darken($brand-facebook, 5%);
+                        background-color: darken($brand-biba, 5%);
                     }
                 }
             }
-            &.social-google-plus {
+            &.social-swms {
                 a {
-                    background-color: $brand-google-plus;
+                    background-color: $brand-swms;
                     &:hover {
-                        background-color: darken($brand-google-plus, 5%);
+                        background-color: darken($brand-swms, 5%);
                     }
                 }
             }

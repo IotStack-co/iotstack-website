@@ -10,12 +10,17 @@ body {
 }
 
 a {
-    color: $theme-primary;
+    color: $theme-link-bottom;
     @include transition-all;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: darken($theme-link-bottom, 10%);
     }
+}
+
+a2 {
+    color: $theme-link-bottom;
+    @include transition-all;
 }
 
 hr {
@@ -50,3 +55,4 @@ section {
         font-size: 50px;
     }
 }
+
